@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Macoms Consulting LTD</title>
+  <meta name="description"
+    content="CGWire develops Kitsu to help you deliver animated content on a tight budget. Kitsu allows to dispatch tasks, perform reviews and manage shots from anywhere.">
+  <meta name="keywords"
+    content="production management pipeline cg cgi blender nuke 3dsmax maya animation movie vfx tracking shotgun alternative">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.html" />
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <meta property="og:title" content="CGWire - Collaboration Platform For Animation Studios">
+  <meta property="og:description"
+    content="CGWire develops Kitsu to help you deliver animated content on a tight budget. Kitsu allows to dispatch tasks, perform reviews and manage shots from anywhere.">
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:image" content="https://cgwire.com/images/logo.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://twitter.com/cgwirenews/">
+  <meta name="twitter:title" content="CGWire - Collaboration Platform For Animation Studios">
+  <meta name="twitter:description"
+    content="CGWire develops Kitsu to help you deliver animated content on a tight budget. Kitsu allows to dispatch tasks, perform reviews and manage shots from anywhere.">
+  <meta name="twitter:image" content="https://cgwire.com/images/logo.svg">
+  <link rel="stylesheet" href="css/bulma.min.css" media="all">
+  <link rel="stylesheet" href="styles/app.css" media="all">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+
+<body>
+  <!-- Navbar Begins -->
+  <header>
+    <nav class="navbar" role="navigation" arial-label="dropdown navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img class="main-logo" src="images/logo2.png"  alt="Macoms logo" />
+        </a>
+        <div class="burger navbar-burger" data-target="top-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="navbar-menu" id="top-menu">
+        <div class="navbar-start flexrow locales">
+
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable ">
+          <a class="navbar-link">
+            <span class="navbar-item-title">
+              Solutions
+            </span>
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item flexrow" href="integrations.html">
+              <img class="flexrow-item icon" src="../images/integrations.svg">
+              <span class="flexrow-item">Integrations</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable ">
+          <a class="navbar-link">
+            <span class="navbar-item-title">
+              Use Cases
+            </span>
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item flexrow" href="studios.html">
+              <img class="flexrow-item icon" src="../images/schools.svg">
+              <span class="flexrow-item">Companies We've Worked With</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable  ">
+          <a class="navbar-link">
+            <span class="navbar-item-title">
+              Resources
+            </span>
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item flexrow"
+             target="_blank" href="https://www.youtube.com/playlist?list=PLqUirrdusvEDRwwc6dDit24K0_58mcKJi">
+              <img class="flexrow-item icon" src="../images/help-circle.svg">
+              <span class="flexrow-item">Tutorials</span>
+            </a>
+
+
+            <a class="navbar-item" href="community.html">
+              <img class="flexrow-item icon" src="../images/users.svg">
+              <span>
+                Community
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <a class="navbar-item " href="pricing.html">
+          <span class="navbar-item-title">
+            Pricing
+          </span>
+        </a>
+
+        <div class="navbar-end">
+          <a class="navbar-item signin" href="https://macoms-login.netlify.app/">
+            Sign in
+          </a>
+          <a class="navbar-item signup" href="https://macoms-signup.netlify.app/">
+            Try it for free
+          </a>
+        </div>
+      </div>
+      </div>
+  </header>
+  <!-- End Of Navbar -->
+
+  <div class="home">
+    <section class="section content introduction">
+      <div class="flexrow">
+        <div class="flexrow-item introduction-text">
+          <h1 class="title">Streamline your work for maximum productivity</h1>
+          <h2 class="main-subtitle">Centralize all your work, processes, tools, and files into one Work OS. 
+            Connect teams, bridge silos, and maintain one source of truth across your organization.</h1>
+            <a href="#kitsu-video" class="toggleModal button button--with-icon is-large">
+              <img src="https://www.youtube.com/watch?v=qLjfAsQRWaM" alt=""><span>Watch the video</span>
+            </a>
+        </div>
+        <div class="flexrow-item introduction-picture">
+          <img src="../images/collaboration.svg" />
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="kitsu-video">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <p class="image is-16by9">
+        <div id="youtube-player"></div>
+        </p>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <section class="section content trusted">
+
+      <h4 class="section-subtitle has-text-centered">
+        Join 20+ companies we have worked with
+      </h4>
+      <div>
+        <a href="studios.html" class="flexrow mt2">
+          <div class="flexrow-item mr0">
+            <img src="../images/Vajob.jpeg">
+          </div>
+          <div class="flexrow-item mr0">
+            <img src="../images/Asset 6.png">
+          </div>
+          <div class="flexrow-item mr0">
+            <img src="../images/logo-blender.png" />
+          </div>
+          <div class="flexrow-item mr0">
+            <img src="../images/black-logo-01.png">
+          </div>
+          <div class="flexrow-item mr0">
+            <img src="../images/Logoforzi.svg">
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section content">
+      <h2 class="subtitle tagline">
+        Bring Your Productions To The Next Step
+      </h2>
+      <p class="has-text-centered tagline-explaination">
+        With our solutions, you keep track of validations and you store every version of each preview. Everyone knows in
+        real-time what is going on. Therefore, you enable efficient collaboration between different sites and with
+        people working from home. You take better decisions and deliver products faster.
+      </p>
+    </section>
+
+    <section class="section content landing-block customer-story mt2">
+        <div class="flexrow reverse">
+          <div class="flexrow-item landing-picture">
+            <img src="../images/Black people working 1.jpg" />
+          </div>
+          <div class="flexrow-item landing-text">
+            <h2 class="section-subtitle">
+              Customer Story:<br /> Vajob Interiors
+            </h2>
+            <p>
+              <em>
+                "Since working with Macoms LTD to adopt Microsft Dynamics 365, our global marketing
+                 department has seen a 40% improvement in cross-team collaboration which has therefore
+                  resulted in incrreased sales and productivity.."
+              </em><br />
+            </p>
+            <p class="mt1">
+              Temilola Adegbite,
+              <br> Head of Sales
+            </p>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section class="section content landing-block">
+      <div class="flexrow">
+        <div class="flexrow-item landing-text">
+          <h2 class="subtitle">
+            Always make the best decisions
+          </h2>
+          <p>
+            You get up to date information. So you can assign tasks and send directives properly. That makes your team
+            more productive.
+          </p>
+        </div>
+        <div class="flexrow-item landing-picture">
+          <img src="../images/landing-overview.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section content landing-block">
+      <div class="flexrow reverse">
+        <div class="flexrow-item landing-picture">
+          <img src="../images/landing-data.png" />
+        </div>
+        <div class="flexrow-item landing-text">
+          <h2 class="subtitle">
+            Make your data available everywhere
+          </h2>
+          <p>
+            Your data and previews are stored securely and will always be accessible to your team and your pipeline.
+            Everyone knows what to do in the office or from home.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content landing-block">
+      <div class="flexrow">
+        <div class="flexrow-item landing-text">
+          <h2 class="subtitle">
+            Get things done from Day 1
+          </h2>
+          <p>
+            Plan, collaborate, and execute on every project and portfolio to reach your goals, faster.
+          </p>
+        </div>
+        <div class="flexrow-item landing-picture">
+          <img src="../images/landing-faster.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section content landing-block">
+      <div class="flexrow reverse">
+        <div class="flexrow-item landing-picture">
+          <img src="../images/landing-together.png" />
+        </div>
+        <div class="flexrow-item landing-text">
+          <h2 class="subtitle">
+            Achieve more together
+          </h2>
+          <p>
+            Track and manage all aspects of your sales cycle, customer data, and more in one place.
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content landing-block customer-story mt2">
+        <div class="flexrow reverse">
+          <div class="flexrow-item landing-picture">
+            <img src="../images/Black girl.jpg" />
+          </div>
+          <div class="flexrow-item landing-text">
+            <h2 class="section-subtitle">
+              Customer Story:<br /> Bybo
+            </h2>
+            <p>
+              <em>
+                "Since we employed the service of MacomsLTD for the integration of our office sales,
+                 I view it aS the backbone of our organization. 
+                And  I feel I have an overview I can always trust."
+              </em><br />
+            </p>
+            <p class="mt1">
+              Ade George,
+              <br> Product Manager
+            </p>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <section class="section supporters">
+      <h2 class="subtitle tagline">
+        They support us
+      </h2>
+      <ul class="flexrow has-text-centered">
+        <li class="flexrow-item w150 mr0"><a target="_blank" href="https://dynamics.microsoft.com/en-us/"><img src="../images/microsoft-80658__480.webp" alt="CNC"></a>
+        </li>
+        <li class="flexrow-item w150 mr0"><a target="_blank" href="https://www.poisenigeria.org/"><img class="poise"
+              src="../images/Oxfam-Nigeria.jpg" width="150px" alt="Epic Games"></a></li>
+        <li class="flexrow-item w150 mr0"><a target="_blank" href="https://www.ekobits.academy//"><img src="../images/Ekobits.jpg"
+              alt="OVH Digital Launch Pad"></a></li>
+      </ul>
+    </section>
+<!-- Want to get started -->
+    <section class="section content has-text-centered">
+      <h2 class="subtitle">
+        Want to get started?
+      </h2>
+      <p>
+        <a class="button is-large" href="https://macoms-signup.netlify.app/">
+          Try it for free
+        </a>
+      </p>
+    </section>
+  </div>
+
+  <section class="section content conclusion conclusion-text">
+    <h2 class="subtitle tagline">
+      Bring teams together to
+      drive business impact
+    </h2>
+    <p class="has-text-centered tagline-explaination">
+      Collaborate effectively organization-wide to get a clear picture of all your work. 
+      Stay in the loop with easy-to-use automations and real-time notifications.
+    </p>
+  </section>
+
+  <section class="section content has-text-centered conclusion conclusion-picture">
+    <img src="../images/studio_collaboration.png" />
+  </section>
+   <!-- Footer begins -->
+   <footer class="footer">
+    <div class="columns">
+
+      <div class="column">
+        <p class="footer-title">
+          Solutions
+        </p>
+        <ul>
+          <li>
+            <a href="kitsu.html" class="level">
+              <span class="level-item">
+                Production Tracker
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="api.html" class="level">
+              <span class="level-item">
+                Studio API
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://cgwire.canny.io/" class="level">
+              <span class="level-item">
+                Roadmap
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <p class="footer-title">
+          Resources
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/playlist?list=PLqUirrdusvEDRwwc6dDit24K0_58mcKJi" class="level">
+              <span class="level-item">
+                Tutorials
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="level">
+              <span>
+                Blog
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="level">
+              <span class="level-item">
+                Spreadsheets
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href=" # " class="level">
+              <span class="level-item">
+                Documentation
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+<!-- Fotter Company -->
+      <div class="column">
+        <p class="footer-title">
+          Company
+        </p>
+        <ul>
+          <li>
+            <a href="about.html" class="level">
+              <span class="level-item">
+                About
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="level">
+              <span class="level-item">
+                Contact
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="terms.html" class="level">
+              <span class="level-item">
+                Terms
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="privacy.html" class="level">
+              <span class="level-item">
+                Privacy
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <p class="footer-title">
+          Media
+        </p>
+        <ul>
+          <li>
+            <a href=" # " class="level">
+              <span>
+                Linkedin
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="level">
+              <span>
+                Twitter
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="level">
+              <span>
+                Facebook
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="level">
+              <span>
+                Instagram
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+<!-- FOtter Comapny Ends -->
+<div>
+  <div class="has-text-centered footer-of-footer">
+    <p class="copy">
+      © Copyright 2022 Macom Consulting LTD. All Rights Reserved.
+  </p>
+</div>
+<div class="col-lg-6 col-sm-12 has-text-centered footer-of-footer">
+  <p class="busayo">
+      Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://instagram.com/busayoo_o"
+       target="_blank"><strong>Busayo</strong></a>
+  </p>
+  </div>
+</div>
+  </footer>
+
+  <div style="" id="cookie-consent" class="cookie-consent flexrow">
+    <p class="flexrow-item text">
+      Do you allow us to set cookies to build anonymous visitor analytics and allow you to contact our support?
+    </p>
+    <p class="flexrow-item cookie-choice">
+      <button id="cookie-ok" class="button default">
+        Yes
+      </button>
+      <button id="cookie-ko" class="button">
+        No
+      </button>
+    </p>
+  </div>
+
+  <script>
+    const elementCookieConsent = document.getElementById('cookie-consent')
+    const cookieConsent = localStorage.getItem('cookie-consent')
+    
+    if (cookieConsent !== null) {
+      elementCookieConsent.style.display = 'none'
+    }
+
+    const elementYes = document.getElementById('cookie-ok')
+    const elementNo = document.getElementById('cookie-ko')
+    elementYes.addEventListener('click', function () {
+      localStorage.setItem('cookie-consent', 'true')
+      elementCookieConsent.style.display = 'none'
+    })
+    elementNo.addEventListener('click', function () {
+      localStorage.setItem('cookie-consent', 'false')
+      window.location.reload()
+    })
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "CGWire",
+      "url": "https://www.cgwire.com",
+      "logo": "https://www.cgwire.com/images/logo.svg",
+      "sameAs": [
+        "http://www.twitter.com/cgwirenews"
+      ]
+    }
+  </script>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('youtube-player', {
+        height: '100%',
+        width: '100%',
+        videoId: '2HNnFffAADU',
+        events: {}
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var modalTogglers = Array.prototype.slice.call(document.querySelectorAll('.toggleModal'), 0);
+      var modalClosers = Array.prototype.slice.call(document.querySelectorAll('.modal-close'), 0);
+      if (modalTogglers.length > 0) {
+        modalTogglers.forEach(function (el) {
+          el.addEventListener('click', function () {
+            var target = el.getAttribute("href").substr(1);
+            var targetEl = document.getElementById(target);
+            targetEl.classList.toggle('is-active');
+            player.playVideo();
+          });
+        });
+      }
+      if (modalClosers.length > 0) {
+        modalClosers.forEach(function (el) {
+          el.addEventListener('click', function () {
+            player.pauseVideo();
+            this.parentNode.classList.remove('is-active');
+          });
+        });
+      }
+    });
+  </script>
+
+  <script>
+    // Javascript required by Bulma to manage the top menu on mobile.
+    document.addEventListener('DOMContentLoaded', function () {
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach(function ($el) {
+          $el.addEventListener('click', function () {
+
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    var isOk = localStorage.getItem('cookie-consent');
+    if (isOk !== 'false') {
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = "http://cgwire.innocraft.cloud/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+      })();
+    }
+  </script>
+  <!-- End Piwik Code -->
+
+  <!-- Begin Crisp Code -->
+  <script type="text/javascript">
+    var isOk = localStorage.getItem('cookie-consent');
+    if (isOk !== 'false') {
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "11e8be84-486e-45f1-b03c-64fcd817ee7f";
+      (function () {
+        d = document;
+        s = d.createElement("script");
+        s.src = "../../client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    }
+  </script>
+  <!-- End Crisp Code -->
+</body>
+</html>

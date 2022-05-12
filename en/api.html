@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  
+<!-- Mirrored from www.cg-wire.com/en/api.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 May 2022 09:10:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CGWire - With Kitsu API sync your production</title>
+    <meta name="description" content="Kitsu exposes an HTTP API that allows you to centralize and access to all your data. Your tools connect to it and query the data from your production. Artists manage their files and their tasks more efficiently. It helps them to spend more time on the artistic side.">
+    <meta name="keywords" content="production management pipeline cg cgi blender nuke 3dsmax maya animation movie vfx tracking shotgun alternative">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.html" />
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <meta property="og:title" content="CGWire - With Kitsu API sync your production">
+    <meta property="og:description" content="Kitsu exposes an HTTP API that allows you to centralize and access to all your data. Your tools connect to it and query the data from your production. Artists manage their files and their tasks more efficiently. It helps them to spend more time on the artistic side.">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:image" content="https://cgwire.com/images/logo.svg">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://twitter.com/cgwirenews/">
+    <meta name="twitter:title" content="CGWire - With Kitsu API sync your production">
+    <meta name="twitter:description" content="Kitsu exposes an HTTP API that allows you to centralize and access to all your data. Your tools connect to it and query the data from your production. Artists manage their files and their tasks more efficiently. It helps them to spend more time on the artistic side.">
+    <meta name="twitter:image" content="https://cgwire.com/images/logo.svg">
+
+    <link rel="stylesheet" href="css/bulma.min.css" media="all">
+    <link rel="stylesheet" href="styles/app.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  </head>
+
+  <body>
+    
+ <!-- Navbar Begins -->
+ <header>
+  <nav class="navbar" role="navigation" arial-label="dropdown navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img class="main-logo" src="images/logo2.png" alt="Macoms logo" />
+      </a>
+      <div class="burger navbar-burger" data-target="top-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar-menu" id="top-menu">
+      <div class="navbar-start flexrow locales">
+
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable ">
+        <a class="navbar-link">
+          <span class="navbar-item-title">
+            Solutions
+          </span>
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item flexrow" href="integrations.html">
+            <img class="flexrow-item icon" src="../images/integrations.svg">
+            <span class="flexrow-item">Integrations</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable ">
+        <a class="navbar-link">
+          <span class="navbar-item-title">
+            Use Cases
+          </span>
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item flexrow" href="studios.html">
+            <img class="flexrow-item icon" src="../images/schools.svg">
+            <span class="flexrow-item">Companies We've Worked With</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable  ">
+        <a class="navbar-link">
+          <span class="navbar-item-title">
+            Resources
+          </span>
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item flexrow"
+           target="_blank" href="https://www.youtube.com/playlist?list=PLqUirrdusvEDRwwc6dDit24K0_58mcKJi">
+            <img class="flexrow-item icon" src="../images/help-circle.svg">
+            <span class="flexrow-item">Tutorials</span>
+          </a>
+
+
+          <a class="navbar-item" href="community.html">
+            <img class="flexrow-item icon" src="../images/users.svg">
+            <span>
+              Community
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <a class="navbar-item " href="pricing.html">
+        <span class="navbar-item-title">
+          Pricing
+        </span>
+      </a>
+
+      <div class="navbar-end">
+        <a class="navbar-item signin" href="https://macoms-login.netlify.app/">
+          Sign in
+        </a>
+        <a class="navbar-item signup" href="https://macoms-signup.netlify.app/">
+          Try it for free
+        </a>
+      </div>
+    </div>
+    </div>
+</header>
+<!-- End Of Navbar -->
+<div class="kitsu-page">
+  <section class="section content">
+    <div class="tile">
+      <div class="tile is-6 is-child">
+        <h2>
+          <span class="section-subtitle">Unleash your data</span>
+          <span class="section-title">A Hub For Your Production</span>
+        </h2>
+        <p class="pr1">
+          Kitsu exposes an HTTP API that allows you to centralize and access to all your data. Your tools connect to it and query the data from your production. Artists manage their files and their tasks more efficiently. It helps them to spend more time on the artistic side.
+        </p>
+      </div>
+      <div class="is-6 is-hidden-mobile pl1 mt4">
+        <img src="../images/landing-data.png" alt="" />
+      </div>
+    </div>
+    <div class="flexrow mt4 has-text-centered highlights">
+      <div class="flexrow-item">
+        <img src="../images/icons/python-client.png" />
+        <p>
+          Fast to learn Python client
+        </p>
+      </div>
+      <div class="flexrow-item">
+        <img src="../images/icons/cloud-based.png" />
+        <p>
+          Cloud-based or on-premises
+        </p>
+      </div>
+      <div class="flexrow-item">
+        <img src="../images/icons/dcc-tools-2.png" />
+        <p>
+          Integrations with your DCC tools
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="block-colored">
+    <section class="section">
+      <div class="tile flex-aic">
+        <div class="tile is-5 is-child content">
+          <h2>
+            <span class="section-subtitle">
+              Integrations
+            </span>
+            <span class="section-title">
+              Bring your data in your tools
+            </span>
+          </h2>
+          <p>
+            DCC plugins can easily be connected to Kitsu API. This allows you to bring your production data inside your tools. And because it can be hosted in-house, it provides extra confidentiality, a faster response time and availability when the internet is down.
+          </p>
+          <p>
+            <a href="https://gazu.cg-wire.com/" class="button button--alt is-large">
+              Read the client documentation
+            </a>
+          </p>
+        </div>
+        <div class="tile is-7 is-child content-image">
+          <img src="../images/softwares.png" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="tile flex-aic content-reverse">
+      <div class="tile is-5 is-child content">
+        <h2>
+          <span class="section-subtitle">
+            Automatized workflow
+          </span>
+          <span class="section-title">
+            Boost your pipeline
+          </span>
+        </h2>
+        <p>
+          <ul>
+            <li>
+              Store your production information and track the progress of your tasks.
+            </li>
+            <li>
+              Generate and store file path based on production information.
+            </li>
+            <li>
+              Synchronize your data and publish previews right from your tools.
+            </li>
+            <li>
+              Run custom script when events occur.
+            </li>
+          </ul>
+        </p>
+          <p>
+            <a href="https://gazu.cg-wire.com/" class="button button--alt is-large">
+              Read the client documentation
+            </a>
+          </p>
+      </div>
+      <div class="tile is-7 is-child content-image">
+        <img class="smaller" src="../images/pipeline.png" />
+      </div>
+    </div>
+  </section>
+
+  <div class="quote">
+    <section>
+      <blockquote class="quote-text">
+        <p>The Python client for Kitsu is really useful for a TD. I was able to code quickly tailor-made tools for production and leads. Thank you for leaving Kitsu open to other software!</p>
+        <footer class="quote-author">
+          <img 
+            class="quote-avatar"
+            src="../images/testimonials/jeromebrack.png" 
+          /> 
+          Jérôme Brack, Technical Director at DogHouse Films
+        </footer>
+      </blockquote>
+    </section>
+  </div>
+
+
+  <section class="section">
+    <div class="tile flex-aic content-reverse">
+      <div class="tile is-5 is-child content">
+        <h2>
+          <span class="section-subtitle">
+            Python Client
+          </span>
+          <span class="section-title">
+            Take advantage of your data
+          </span>
+        </h2>
+        <p>
+          We noticed that clients from major production and asset management solutions are complex to use. When dealing with the many data of your production, it can lead to frustration and errors. Which is why we made a simple Python client. With it you can easily query the API and find the information you need.
+        </p>
+        <p>
+          <a href="https://gazu.cg-wire.com/" class="button button--alt is-large">
+            Read the client documentation
+          </a>
+        </p>
+      </div>
+      <div class="tile is-7 is-child content-image">
+        <img class="smaller" src="../images/simple.png" />
+      </div>
+    </div>
+  </section>
+
+  <div class="block-colored">
+    <section class="section">
+      <div class="tile flex-aic">
+        <div class="tile is-5 is-child content">
+          <h2>
+            <span class="section-subtitle">
+              HTTP API
+            </span>
+            <span class="section-title">
+              A shared database for all the studio
+            </span>
+          </h2>
+          <p>
+            Building a movie involves a lot of data: assets, shots, casting, task assignation, file locations and more. All this information must be shared among all the departments. Kitsu API provides you with central storage for all this data. And it can be queried from anywhere.
+          </p>
+          <p>
+            <a href="https://gazu.cg-wire.com/" class="button button--alt is-large">
+              Read the client documentation
+            </a>
+          </p>
+        </div>
+        <div class="tile is-7 is-child content-image">
+          <img class="smaller" src="../images/central.png" />
+        </div>
+      </div>
+    </section>
+  </div>
+  </section>
+
+  <div class="block">
+    <section class="section">
+      <div class="tile flex-aic">
+        <div class="tile is-7 is-child content mr1">
+        <pre>
+import gazu
+
+gazu.log_in("john", os.getenv("PASSWORD", "default"))
+
+project = gazu.project.get_project_by_name("Big Buck Bunny")
+assets = gazu.asset.all_assets_for_project(project)
+
+modeling = gazu.task.get_task_type_by_name("Modeling")
+tasks = gazu.task.all_tasks_for_entity_and_task_type(assets[0], modeling)
+
+gazu.files.build_working_file_path(tasks[0])
+> "/productions/bbb/assets/characters/bunny/modeling/bbb_bunny_modeling_v001"
+        </pre>
+
+        </div>
+
+        <div class="tile is-5 is-child content pl1">
+          <h2>
+            <span class="section-subtitle">
+              Clean Code
+            </span>
+            <span class="section-title">
+              Enjoy a simple API
+            </span>
+          </h2>
+            <ul>
+              <li>
+                Intuitive functions to fetch production data.
+              </li>
+              <li>
+                Raw client to handle more complex requests.
+              </li>
+              <li>
+                Cache system for faster response time.
+              </li>
+              <li>
+                Available as a Python package on Pypi.org.
+              </li>
+            </ul>
+            <p>
+            <a href="https://gazu.cg-wire.com/" class="button button--alt is-large">
+              Read the client documentation
+            </a>
+            </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+</div>
+
+<div class="trial">
+  <section class="section content trial-content">
+    <h2 class="subtitle has-text-centered">
+      Do you want to use Kitsu?
+    </h2>
+    <p class="has-text-centered">
+      <a class="button is-large" href="https://macoms-signup.netlify.app/">
+        Try it for free
+      </a>
+    </p>
+    <p class="has-text-centered">
+      &nbsp;
+    </p>
+  </section>
+</div>
+
+
+   <footer class="footer">
+      <div class="columns">
+
+        <div class="column">
+          <p class="footer-title">
+            Solutions
+          </p>
+          <ul>
+            <li>
+              <a href="kitsu.html" class="level">
+                <span class="level-item">
+                  Production Tracker
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="api.html" class="level">
+                <span class="level-item">
+                  Studio API
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://cgwire.canny.io/" class="level">
+                <span class="level-item">
+                  Roadmap
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <p class="footer-title">
+            Resources
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnQgZ4TCrAt7smxesaDo29" class="level">
+                <span class="level-item">
+                  Tutorials
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://blog.cg-wire.com/" class="level">
+                <span>
+                  Blog
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="spreadsheets.html" class="level">
+                <span class="level-item">
+                  Spreadsheets
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://kitsu.cg-wire.com/" class="level">
+                <span class="level-item">
+                  Documentation
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://poeditor.com/join/project?hash=fpUejpWDVo" class="level">
+                <span cl9ass="level-item">
+                  Translations
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://hub.docker.com/r/cgwire/cgwire" class="level">
+                <span class="level-item">
+                  Docker
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/cgwire" class="level">
+                <span>
+                  Github
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <p class="footer-title">
+            Company
+          </p>
+          <ul>
+            <li>
+              <a href="about.html" class="level">
+                <span class="level-item">
+                  About
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="level">
+                <span class="level-item">
+                  Contact
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://metrics.cg-wire.com/" class="level">
+                <span class="level-item">
+                  Metrics 
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="terms.html" class="level">
+                <span class="level-item">
+                  Terms
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="privacy.html" class="level">
+                <span class="level-item">
+                  Privacy
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <p class="footer-title">
+            Media
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/company/cgwire/" class="level">
+                <span>
+                  Linkedin
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/cgwirekitsu" class="level">
+                <span>
+                  Twitter
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/cgwire" class="level">
+                <span>
+                  Facebook
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/cgwire" class="level">
+                <span>
+                  Instagram
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="newsletter.html" class="level">
+                <span>
+                  Newsletter
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="has-text-centered footer-of-footer">
+      Made with <span style="color: red;">&hearts;</span>
+        in France
+      </div>
+    </footer>
+
+
+    <div style="" id="cookie-consent" class="cookie-consent flexrow">
+      <p class="flexrow-item text">
+         Do you allow us to set cookies to build anonymous visitor analytics and allow you to contact our support?
+      </p>
+      <p class="flexrow-item cookie-choice">
+        <button id="cookie-ok" class="button default">
+           Yes
+        </button>
+        <button id="cookie-ko" class="button">
+           No
+        </button>
+      </p>
+    </div>
+
+    <script>
+    const elementCookieConsent = document.getElementById('cookie-consent')
+    const cookieConsent = localStorage.getItem('cookie-consent')
+    if (cookieConsent !== null) {
+      elementCookieConsent.style.display = 'none'
+    }
+
+    const elementYes = document.getElementById('cookie-ok')
+    const elementNo = document.getElementById('cookie-ko')
+    elementYes.addEventListener('click', function () {
+      localStorage.setItem('cookie-consent', 'true')
+      elementCookieConsent.style.display = 'none'
+    })
+    elementNo.addEventListener('click', function () {
+      localStorage.setItem('cookie-consent', 'false')
+      window.location.reload()
+    })
+    </script>
+
+    <script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "CGWire",
+  "url" : "https://www.cgwire.com",
+  "logo" : "https://www.cgwire.com/images/logo.svg",
+  "sameAs" : [
+    "http://www.twitter.com/cgwirenews"
+  ]
+}
+    </script>
+
+
+    <script>
+    // Javascript required by Bulma to manage the top menu on mobile.
+    document.addEventListener('DOMContentLoaded', function () {
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
+});
+    </script>
+    <script type="text/javascript">
+      var isOk = localStorage.getItem('cookie-consent');
+      if (isOk !== 'false') {
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="http://cgwire.innocraft.cloud/";
+          _paq.push(['setTrackerUrl', u+'piwik.php']);
+          _paq.push(['setSiteId', '1']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+      }
+    </script>
+    <!-- End Piwik Code -->
+
+    <!-- Begin Crisp Code -->
+    <script type="text/javascript">
+      var isOk = localStorage.getItem('cookie-consent');
+      if (isOk !== 'false') {
+        window.$crisp=[];window.CRISP_WEBSITE_ID="11e8be84-486e-45f1-b03c-64fcd817ee7f";(function(){d=document;s=d.createElement("script");s.src="../../client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+      }
+    </script>
+    <!-- End Crisp Code -->
+
+    <!-- Linkedin Code -->
+    <!--script type="text/javascript">
+      _linkedin_partner_id = "3700514";
+      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script><script type="text/javascript">
+    (function(l) {
+    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+    window.lintrk.q=[]}
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);})(window.lintrk);
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=3700514&fmt=gif" />
+    </noscript-->
+    <!-- End Linkedin Code -->
+
+    <!-- Google Analytics -->
+<!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-219912887-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-219912887-1');
+</script-->
+    <!-- End Google Analytics Code -->
+  </body>
+
+<!-- Mirrored from www.cg-wire.com/en/api.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 May 2022 09:10:28 GMT -->
+</html>
